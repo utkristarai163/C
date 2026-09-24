@@ -1,25 +1,61 @@
-//Printing number triangle using loop
+//Printing star triangles using loop
 #include<stdio.h>
-void main() 
+void main()
 {
-    int i, j, n,sp,k=1,ht;
-    
+    int i, j, n,d,k,d1,temp;
+
     printf("Input n:");
-    scanf("%d", &sp);
-    ht=sp;
-                            
-    printf("\n");                    
-  
-    for (i=1;i<=ht;i++)
-    {    
-        for (j=0;j<sp;j++)
-        printf(" ");
-                        
-        for (j=0;j<k;j++) 
+    scanf("%d", &d);
+
+    k=1;
+    d1=d;
+    temp=d1;
+
+    printf("\n");
+    for (i=1;i<=d;i++)
+    {
+        for (j=0;j<k;j++)
         printf("*");
-     
+
+    printf("\n");
+    k++;
+                            }
+
+    printf("\n\n");
+
+//////////////////////////////////////////////////
+
+    k=1;
+    d1=temp;
+
+    for (i=1;i<=d;i++)
+    {
+        for (j=0;j<d1;j++)
+        printf(" ");
+
+        for (j=0;j<k;j++)
+        printf("*");
+
+    printf("\n");
+    k++;
+    d1--;                    }
+
+    printf("\n\n");
+
+/////////////////////////////////////////////////
+
+    k=1;
+    d1=temp;
+
+    for (i=1;i<=d;i++)
+    {
+        for (j=0;j<d1;j++)
+        printf(" ");
+
+        for (j=0;j<k;j++)
+        printf("*");
+
     printf("\n");
     k=k+2;
-    sp--;
-                            }                        
-}            
+    d1--;                    }
+}
